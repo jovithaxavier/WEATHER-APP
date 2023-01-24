@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        First number: <br>
+        <input type="text" id="text1"><br>
+        Second number: <br>
+        <input type="text" id="text2"><br>
+        Result: <br>
+        <input type="text" id="res"><br>
+        <input type="button" value="Add" onclick="addnumber()">
+        <input type="button" value="Subtract" onclick="subnumber()">
+        <input type="button" value="Multiply" onclick="mulnumber()">
+        <input type="button" value="Divide" onclick="divnumber()">  
+    </div>
+    <script>
+        function addnumber()
+        {
+            var f_num = parseInt(document.getElementById("text1").value);
+            console.log(f_num);
+            var s_num = parseInt(document.getElementById("text2").value);
+            console.log(s_num);
+            var sum=f_num + s_num;
+            console.log(sum);
+            document.getElementById("res").value=sum;
+        }
+        function subnumber()
+        {
+            var f_num = parseInt(document.getElementById("text1").value);
+            console.log(f_num);
+            var s_num = parseInt(document.getElementById("text2").value);
+            console.log(s_num);
+            var diff=f_num - s_num;
+            console.log(diff);
+            document.getElementById("res").value=diff;
+        }
+        function mulnumber()
+        {
+            var f_num = parseInt(document.getElementById("text1").value);
+            console.log(f_num);
+            var s_num = parseInt(document.getElementById("text2").value);
+            console.log(s_num);
+            var product=f_num * s_num;
+            console.log(product);
+            document.getElementById("res").value=product;
+        }
+        function divnumber()
+        {
+            var f_num = parseInt(document.getElementById("text1").value);
+            console.log(f_num);
+            var s_num = parseInt(document.getElementById("text2").value);
+            console.log(s_num);
+            var div=f_num / s_num;
+            console.log(div);
+            document.getElementById("res").value=div;
+        }
+    </script>      
+</body>
+</html>
